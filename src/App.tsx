@@ -88,9 +88,7 @@ export default function App() {
             Welcome
           </h2>
           <p style={{ marginBottom: 0, color: "#cbd5e1", fontSize: "0.98rem" }}>
-            This is your mobile friendly program showcase app. You will be able
-            to add images, videos, student work, descriptions, and marketing
-            information for tours, presentations, and current students.
+            Using current industry standard technology, students will develop computer-based artistic skills and utilize drawing and creative talents to produce products for business, training, entertainment, communications, and marketing. Skills and knowledge developed in this program include: Photography, video productions, audio productions, 2D & 3D model creation, introduction to game development through character and landscape development techniques, graphic design, color theory, typography, programming, eSports, VR/AR, Artificial Intelligence and Machine Learning, and 3D printing using a wide variety of industry software through a multi-platformed environment.
           </p>
         </section>
 
