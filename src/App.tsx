@@ -1,4 +1,9 @@
-export default function App() {
+import { Routes, Route, Link } from "react-router-dom";
+
+/* ----------------------------
+   HOMEPAGE COMPONENT
+--------------------------------*/
+function HomePage() {
   return (
     <div
       style={{
@@ -117,7 +122,15 @@ export default function App() {
                 color: "#e5e7eb",
               }}
             >
-              For Students
+              <h3>
+  <a
+    href="/students"
+    style={{ color: "#f97316", textDecoration: "none", cursor: "pointer" }}
+  >
+    For Students
+  </a>
+</h3>
+
             </h3>
             <ul
               style={{
