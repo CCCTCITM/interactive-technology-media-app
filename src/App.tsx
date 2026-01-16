@@ -53,7 +53,7 @@ function HomePage() {
                 marginTop: 6,
               }}
             >
-              <span style={{ color: "#f97316" }}>& Emerging Media</span>
+              <span style={{ color: "#f97316" }}>Emerging Media</span>
             </div>
           </div>
 
@@ -93,11 +93,13 @@ function HomePage() {
             Welcome
           </h2>
           <p style={{ marginBottom: 0, color: "#cbd5e1", fontSize: "0.98rem" }}>
-            Using current industry standard technology, students will develop computer-based artistic skills and utilize drawing and creative talents to produce products for business, training, entertainment, communications, and marketing. Skills and knowledge developed in this program include: Photography, video productions, audio productions, 2D & 3D model creation, introduction to game development through character and landscape development techniques, graphic design, color theory, typography, programming, eSports, VR/AR, Artificial Intelligence and Machine Learning, and 3D printing using a wide variety of industry software through a multi-platformed environment.
+            This is your mobile friendly program showcase app. You will be able
+            to add images, videos, student work, descriptions, and marketing
+            information for tours, presentations, and current students.
           </p>
         </section>
 
-        {/* TWO FEATURE CARDS */}
+        {/* FEATURE CARDS */}
         <div
           style={{
             marginTop: 20,
@@ -106,6 +108,7 @@ function HomePage() {
             gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
           }}
         >
+          {/* ====== FOR STUDENTS ====== */}
           <div
             style={{
               background: "rgba(15, 23, 42, 0.92)",
@@ -119,18 +122,19 @@ function HomePage() {
                 marginTop: 0,
                 marginBottom: 8,
                 fontSize: "1.05rem",
-                color: "#e5e7eb",
+                color: "#f97316",
               }}
             >
-              <h3>
-  <a
-    href="/students"
-    style={{ color: "#f97316", textDecoration: "none", cursor: "pointer" }}
-  >
-    For Students
-  </a>
-</h3>
-
+              <Link
+                to="/students"
+                style={{
+                  color: "#f97316",
+                  textDecoration: "none",
+                  fontWeight: 700,
+                }}
+              >
+                For Students
+              </Link>
             </h3>
             <ul
               style={{
@@ -146,6 +150,7 @@ function HomePage() {
             </ul>
           </div>
 
+          {/* ====== FOR MARKETING ====== */}
           <div
             style={{
               background: "rgba(15, 23, 42, 0.92)",
@@ -192,5 +197,47 @@ function HomePage() {
         </footer>
       </div>
     </div>
+  );
+}
+
+/* ----------------------------
+   STUDENTS PAGE COMPONENT
+--------------------------------*/
+function StudentsPage() {
+  return (
+    <div
+      style={{
+        minHeight: "100vh",
+        padding: 32,
+        background: "#0f172a",
+        color: "#e5e7eb",
+        fontFamily:
+          'system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif',
+      }}
+    >
+      <h1 style={{ marginTop: 0, color: "#f97316" }}>Student Resources</h1>
+      <p style={{ fontSize: "1rem" }}>
+        This is where student links, rubrics, project briefs, certifications,
+        and other resources will live.
+      </p>
+
+      <p style={{ marginTop: 24 }}>
+        <Link to="/" style={{ color: "#38bdf8" }}>
+          ← Back to Home
+        </Link>
+      </p>
+    </div>
+  );
+}
+
+/* ----------------------------
+   MAIN APP (ROUTER)
+--------------------------------*/
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/students" element={<StudentsPage />} />
+    </Routes>
   );
 }
