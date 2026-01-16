@@ -17,10 +17,11 @@ export default function App() {
             padding: 20,
           }}
         >
-          <h1 style={{ margin: 0, textAlign: "center", lineHeight: 1.2, }}> <div style={{ fontSize: "1.75rem", fontweight: 600 }}>
+          <h1 style={{ margin: 0, textAlign: "center", lineHeight: 1.2, }}> 
+            <div style={{ fontSize: "1.75rem", fontWeight: 600 }}>
             Interactive Technology
           </div>
-          <div style={{ fontSize: "2.25rem", fontWeight: 800 }}> 
+          <div style={{ fontSize: "2.25rem", fontWeight: 800 }}>
              <span style={{ color: "#FFA500" }}> & Emerging Media</span>
              </div>
              </h1>
